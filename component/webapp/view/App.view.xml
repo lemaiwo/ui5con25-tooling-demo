@@ -1,0 +1,6 @@
+<mvc:View controllerName="be.wl.tooling.fiori.component.controller.App"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+        <MessageStrip text="Component information demo"></MessageStrip>
+</mvc:View>

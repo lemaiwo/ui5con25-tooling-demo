@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd">
+	<name>be.wl.tooling.ui5.library</name>
+	<vendor>lemaiwo</vendor>
+	<version>${version}</version>
+	<copyright>${copyright}</copyright>
+	<title>be.wl.tooling.ui5.library</title>
+	<documentation>Some description about be.wl.tooling.ui5.library</documentation>
+	<dependencies>
+		<dependency>
+			<libraryName>sap.ui.core</libraryName>
+		</dependency>
+	</dependencies>
+</library>

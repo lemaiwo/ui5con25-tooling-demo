@@ -1,0 +1,31 @@
+specVersion: "3.1"
+metadata:
+  name: 'toolingsample'
+type: application
+# resources:
+#   configuration:
+#     propertiesFileSourceEncoding: UTF-8
+builder:
+  resources:
+    excludes:
+      - "/test/**"
+      - "/localService/**"
+  customTasks:
+  # - name: webide-extension-task-updateManifestJson
+  #   afterTask: replaceVersion
+  #   configuration:
+  #     appFolder: webapp
+  #     destDir: dist
+  - name: ui5-task-zipper
+    afterTask: generateCachebusterInfo
+    configuration:
+      archiveName: toolingsample
+      relativePaths: true
+      additionalFiles:
+      - xs-app.json
+  - name: ui5-tooling-transpile-task
+    afterTask: replaceVersion
+    configuration:
+      debug: true
+      transformModulesToUI5:
+        overridesToOverride: true
