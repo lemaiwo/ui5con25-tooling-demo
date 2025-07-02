@@ -13,8 +13,8 @@
                 path: '/Products'
             }" >
             <StandardListItem
-                title="{ProductName}"
-                counter="{QuantityPerUnit}"/>
+                title="{Name}"
+                counter="{Rating}"/>
         </List>
     </Page>
 </mvc:View>

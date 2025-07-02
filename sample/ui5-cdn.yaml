@@ -10,12 +10,11 @@ server:
       afterMiddleware: compression
       configuration:
         ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
-        ui5:
-          path:
-            - /resources
-            - /test-resources
-          url: https://ui5.sap.com
-          version: 1.135.0
+        # ui5:
+        #   path:
+        #     - /resources
+        #     - /test-resources
+        #   url: https://ui5.sap.com
         backend:
           - path: /v2
             url: https://services.odata.org
@@ -23,9 +22,9 @@ server:
       afterMiddleware: compression
       configuration:
         paths:
-          - path: /resources/be/wl/tooling/ui5/library
+          - path: /tooling/library
             src: "../be.wl.tooling.ui5.library/dist/resources/be/wl/tooling/ui5/library"
-          - path: /resources/be/wl/tooling/fiori/component
+          - path: /tooling/component
             src: "../component/dist"
     - name: fiori-tools-appreload
       afterMiddleware: compression
